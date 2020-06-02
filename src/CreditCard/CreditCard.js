@@ -11,22 +11,22 @@ const creditcard = ({type, number, expirationMonth, expirationYear, bank,owner,b
             return (<div className="card" style={{backgroundColor:`${bgColor}`, color:`${color}`}} >
                 <div className="cardBanner" >{type}</div>
                 <div className="cardNumber" >{number}</div> 
-                <div className="cardText" > Expires 0{expirationMonth}/{expirationYear}  {bank} </div>
-                <div className="cardText" >{owner}</div>
+                <div className="cardText1" > Expires 0{expirationMonth}/{expirationYear}  {bank} </div>
+                <div className="cardText1" >{owner}</div>
                 </div>)
         case "0123456789010995":
             return <div className="card" style={{backgroundColor:`${bgColor}`, color:`${color}`}} > 
                 <div className="cardBanner">{type}</div> 
                 <div className="cardNumber" >{number}</div> 
-                <div className="cardText" > Expires 0{expirationMonth}/{expirationYear}  {bank} </div>
-                <div className="cardText" >{owner}</div>
+                <div className="cardText1" > Expires 0{expirationMonth}/{expirationYear}  {bank} </div>
+                <div className="cardText1" >{owner}</div>
                 </div>;
         case "0123456789016984":
             return <div className="card" style={{backgroundColor:`${bgColor}`, color:`${color}`}} >
                 <div className="cardBanner">{type}</div> 
                 <div className="cardNumber" >{number}</div> 
-                <div className="cardText" > Expires {expirationMonth}/{expirationYear}  {bank} </div>
-                <div className="cardText" >{owner}</div>
+                <div className="cardText1" > Expires {expirationMonth}/{expirationYear}  {bank} </div>
+                <div className="cardText1" >{owner}</div>
                 </div>;
         default:
             return <div className="card" style={{backgroundColor:`${bgColor}`, color:`${color}`}} >100</div>;

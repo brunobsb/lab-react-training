@@ -11,12 +11,25 @@ import './App.css';
 
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      counter1: 0,
+      counter2: 0,
 
+    }
+  }
 
-
+incrementButton1 = () => {
+  this.setState({ counter1: this.state.counter1 + 1 })
+}
+incrementButton2 = () => {
+  this.setState({ counter2: this.state.counter2 + 1 })
+}
 
 
   render(){
+  console.log("Chamou o Render!!!")
   return (
 <div className="App">
 <IdCard
@@ -100,8 +113,9 @@ class App extends Component {
     licensePlate: "BE33ER"
   }} />
 
-<LikeButton /> 
-<LikeButton />
+<LikeButton id="button1" counter1={this.state.counter1} addMethod1={this.incrementButton1} /> 
+
+<LikeButton id="button2" counter2={this.state.counter2} addMethod2={this.incrementButton2} />
 
     </div>
   );
