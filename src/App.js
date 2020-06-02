@@ -7,6 +7,7 @@ import CreditCard from './CreditCard/CreditCard';
 import Rating from './Rating/Rating';
 import DriverCard from './DriverCard/DriverCard';
 import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
 import './App.css';
 
 
@@ -16,7 +17,8 @@ class App extends Component {
     this.state = {
       counter1: 0,
       counter2: 0,
-
+      switchImg: false,
+      // imgcontainer: "",
     }
   }
 
@@ -25,6 +27,13 @@ incrementButton1 = () => {
 }
 incrementButton2 = () => {
   this.setState({ counter2: this.state.counter2 + 1 })
+}
+
+changeImgtrue = () => {
+  this.setState({ switchImg: true })
+}
+changeImgfalse = () => {
+  this.setState({ switchImg: false })
 }
 
 
@@ -117,7 +126,16 @@ incrementButton2 = () => {
 
 <LikeButton id="button2" counter2={this.state.counter2} addMethod2={this.incrementButton2} />
 
-    </div>
+<ClickablePicture
+  img='/img/persons/maxence.png'
+  imgClicked='/img/persons/maxence-glasses.png'
+  switchImg={this.state.switchImg}
+  addMethod1={this.changeImgfalse}
+  addMethod2={this.changeImgtrue}
+  
+/>
+
+</div>
   );
   }
 }
