@@ -1,0 +1,14 @@
+.starbody{
+    align-items: center;
+    background: white;
+    color: gold;
+    display: flex;
+    font-size: 150px;
+    height: 300px;
+    justify-content: center;
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+  }

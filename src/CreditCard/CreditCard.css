@@ -1,0 +1,57 @@
+.card{
+    border-radius: 15px;
+    border: 1px solid darkgrey;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: space-around;
+	border: 1px solid red;
+};
+
+.cardbox{
+	/* misterio */
+	border: 1px solid blue;
+	};
+
+.cardBanner{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+    align-content: flex-end;
+	width: 100%;
+	border: 1px solid purple;
+}
+
+.cardNumber{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    font-size: x-large;
+	width: 100%;
+	border: 1px solid green;
+
+}
+
+.cardText{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+    align-content: center;
+    font-size: x-small;
+	width: 100%;
+	border: 1px solid magenta;
+    
+
+}

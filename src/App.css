@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 40px;
 }
 
 .App-logo {
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flexcard{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+  align-content: space-around;
+  margin-top: 50px;
 }

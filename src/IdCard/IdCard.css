@@ -1,0 +1,24 @@
+.cardAlign{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: center;
+    border: 1px solid black
+}
+
+.portrait{
+    width: 200px;
+    height: 200px;
+}
+
+.cardText{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+    align-content: flex-start;
+    
+}
